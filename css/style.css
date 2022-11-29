@@ -1,5 +1,74 @@
 @font-face {
-    font-family: Montserrat;
+    font-family: 'Montserrat';
     src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family:'Montserrat';
+    color: #0a0a0a;
+    font-size: 16px;
+    line-height: 19px;
+}
+
+.container {
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+.header {
+    background-color:#469fb2;
+    color: #0a0a0a;
+    font-size: 18px;
+}
+
+header .container {
+    display: flex;   
+}
+
+.header-avatar {
+    margin: 0;
+    padding: 0 15px;
+    max-width: 300px;
+}
+
+.profile-photo {
+    width: 100%;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-around;
+}
+
+.nav-link {
+    padding-right: 10px;
+}
+
+
+
+
+
+
+.main {
+    background-color: blanchedalmond;
+}
+
+.footer {
+    background-color: darkgoldenrod;
+}
