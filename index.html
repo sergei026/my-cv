@@ -12,40 +12,38 @@
 <body>
     <header class="header">
         <div class="container">
-            <div class="header-avatar">
-                <img src="./assets/img/avatar.jpg" alt="profile photo" class="profile-photo">
-            </div>
-            <div class="header-content">
-                <div class="header-menu">
-                    <nav class="nav">
-                        <ul class="nav-menu">
-                            <li class="menu-item">
-                                <a class="nav-link" href="#contacts">Contacts</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="nav-link" href="#about">About</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="nav-link" href="#skills">Skills</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="nav-link" href="#code">Code</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="nav-link" href="#projects">Projects</a>
-                            </li>
-                            <li class="menu-item">
-                                <a class="nav-link" href="#education">Education</a>
-                            </li>
-                        </ul>
-                    </nav>
+            <div class="header-container">
+                <div class="header-avatar">
+                    <!-- <img src="./assets/img/avatar.jpg" alt="profile photo" class="profile-photo"> -->
                 </div>
-                <div class="header-headline">
-                    <div class="header-title">
-                        <h1>Sergey Burukhin</h1>
+                <div class="header-content">
+                    <div class="header-menu">
+                        <nav class="nav">
+                            <ul class="nav-menu">
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#contacts">Contacts</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#about">About</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#skills">Skills</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#code">Code</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#projects">Projects</a>
+                                </li>
+                                <li class="menu-item">
+                                    <a class="nav-link" href="#education">Education</a>
+                                </li>
+                            </ul>
+                        </nav>
                     </div>
-                    <div class="header-subtitle">
-                        <h2>Junior Front-End Developer</h2>
+                    <div class="header-headline">
+                        <h1 class="header-title">Sergey Burukhin</h1>
+                        <h2 class="header-subtitle">Evolving Front-End Developer</h2>
                     </div>
                 </div>
             </div>
@@ -53,67 +51,73 @@
     </header>
     <main class="main">
         <div class="container">
-            <div class="aside">
-                <section class="contacts" id="contacts">
-                    <ul class="contacts-list">
-                        <li class="contacts-item">
-                            <a href="#">Dubai, UAE</a>
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#">Email</a>
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#">GitHub</a>
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#">Telegram</a>
-                        </li>
-                        <li class="contacts-item">
-                            <a href="#">Discord</a>
-                        </li>
-                    </ul>
-                </section>
-                <section class="skills" id="skills">
-                    <ul>
-                        <li class="skills-item">HTML</li>
-                        <li class="skills-item">CSS</li>
-                        <li class="skills-item">JavaScript</li>
-                        <li class="skills-item">GitHub</li>
-                        <li class="skills-item">Figma</li>
-                    </ul>
-                </section>
-            </div>
-            <div class="main-content">
-                <section class="about" id="about">
-                    <!-- summary, goals, education, languages -->
-                </section>
-                <section class="code" id="code">
+            <div class="main-container">
+                <div class="aside">
+                    <section class="contacts" id="contacts">
+                        <ul class="contacts-list">
+                            <li class="contacts-item">
+                                <a href="#">Dubai, UAE</a>
+                            </li>
+                            <li class="contacts-item">
+                                <a href="#">Email</a>
+                            </li>
+                            <li class="contacts-item">
+                                <a href="#">GitHub</a>
+                            </li>
+                            <li class="contacts-item">
+                                <a href="#">Telegram</a>
+                            </li>
+                            <li class="contacts-item">
+                                <a href="#">Discord</a>
+                            </li>
+                        </ul>
+                    </section>
+                    <section class="skills" id="skills">
+                        <ul>
+                            <li class="skills-item">HTML</li>
+                            <li class="skills-item">CSS</li>
+                            <li class="skills-item">JavaScript</li>
+                            <li class="skills-item">GitHub</li>
+                            <li class="skills-item">Figma</li>
+                        </ul>
+                    </section>
+                </div>
+                <div class="main-content">
+                    <section class="about" id="about">
+                        <!-- summary, goals, education, languages -->
+                    </section>
+                    <section class="code" id="code">
 
-                </section>
-                <section class="projects" id="projects">
-                    <div class="project-item">
-                        <!-- apple landing -->
-                    </div>
-                    <div class="project-item">
-                        <!-- more projects coming soon -->
-                    </div>
-                </section>
+                    </section>
+                    <section class="projects" id="projects">
+                        <div class="project-item">
+                            <!-- apple landing -->
+                        </div>
+                        <div class="project-item">
+                            <!-- more projects coming soon -->
+                        </div>
+                    </section>
+                </div>
             </div>
         </div>
     </main>
     <footer class="footer">
         <div class="container">
-            <div class="githubd-link">
-                <a href="#"> 
-                    <!-- my discord icon -->
-                    <img src="./assets/icons/github-2.png" alt="sergey's github">
-                </a>
-            </div>
-            <div class="footer-content">
-                <!-- © 2022; RS School icon -->
-                <a href="#">
-                    <img src="./assets/icons/rss.svg" alt="rsschool">
-                </a>
+            <div class="footer-container">
+                <div class="github">
+                    <a href="#" class="github-link"> 
+                        <!-- my github icon -->
+                        <img src="./assets/icons/github-2.png" alt="sergey's github" width="100px" class="gh-logo">
+                    </a>
+                </div>
+                <div class="footer-content">
+                    <div>© 2022</div>
+                    <div>
+                        <a href="#">
+                            <img src="./assets/icons/rss.svg" alt="rsschool">
+                        </a>
+                    </div>
+                </div>
             </div>
         </div>
     </footer>

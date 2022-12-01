@@ -12,6 +12,11 @@ a {
     color: inherit;
 }
 
+h1,h2 {
+    margin: 0;
+    line-height: 40px;
+}
+
 ul {
     list-style: none;
     margin: 0;
@@ -32,43 +37,94 @@ body {
 }
 
 .header {
-    background-color:#469fb2;
-    color: #0a0a0a;
+    color: #ffff;
     font-size: 18px;
 }
 
-header .container {
-    display: flex;   
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    background-color:#002f51;   
 }
 
 .header-avatar {
-    margin: 0;
-    padding: 0 15px;
-    max-width: 300px;
+    width: 25%;
+    background-image: url(../assets/img/avatar.jpg);
+    background-size: cover;
 }
 
 .profile-photo {
-    width: 100%;
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.header-content {
+    width: 75%;
+    height: 300px;
 }
 
 .nav-menu {
     display: flex;
-    justify-content: space-around;
+    justify-content: flex-end;
+    margin: 20px 0;
+    background-color: #ff8200;
+    height: 50px;
+    align-items: center;
 }
 
 .nav-link {
-    padding-right: 10px;
+    padding-right: 15px;
+}
+
+.header-headline {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    margin-top: 60px;
+    padding: 15px 15px;
+    background-color: #ff8200;
+}
+
+.main-container {
+    
 }
 
 
 
-
-
-
-.main {
-    background-color: blanchedalmond;
+.aside {
+    width: 25%;
+    background-color: #002f51;
 }
 
 .footer {
-    background-color: darkgoldenrod;
+    
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #ff8200;
+}
+
+.github {
+    width: 25%;
+    height: 100px;
+    background-color: #002f51;
+}
+
+.github-link {
+    max-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;width: 75%;
+
 }
