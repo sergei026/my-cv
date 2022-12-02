@@ -3,6 +3,10 @@
     src: url(./assets/fonts/Montserrat-VariableFont_wght.ttf);
 }
 
+* {
+    box-sizing: border-box;
+  }
+
 html {
     scroll-behavior: smooth;
 }
@@ -32,13 +36,15 @@ body {
 
 .container {
     max-width: 1400px;
+    min-width: 765px;
     margin: 0 auto;
     padding: 0 15px;
 }
 
 .header {
     color: #ffff;
-    font-size: 18px;
+    font-size: 20px;
+    font-weight: 600;
 }
 
 .header-container {
@@ -85,19 +91,51 @@ body {
     background-color: #ff8200;
 }
 
-.main-container {
-    
+.main-container{
+    display: flex;
 }
-
-
 
 .aside {
     width: 25%;
     background-color: #002f51;
+    color: #ffff;
+    padding: 10px 0 0 20px;
 }
 
-.footer {
-    
+.contacts-headline,
+.skills-headline {
+    display: block;
+    margin: 0;
+    text-align: center;
+    font-size: 30px;
+    padding: 20px 10px 15px 0;
+    border-bottom: solid 3px #ff8200;
+}
+
+.contacts-item,
+.skills-item {
+    padding: 15px 0 0 10px;
+    align-items: center;    
+}
+
+.main-content {
+    width: 75%;
+}
+
+.about-headline,
+.code-headline,
+.projects-headline {
+    display: block;
+    font-size: 30px;
+    padding: 30px 10px 15px 0;
+    margin: 0 30px;
+    border-bottom: solid 3px #ff8200;
+    text-align: end;
+}
+
+.main-text {
+    padding: 15px 0 15px;
+    margin: 0 30px;
 }
 
 .footer-container {
@@ -109,12 +147,8 @@ body {
 
 .github {
     width: 25%;
-    height: 100px;
+    height: 100%;
     background-color: #002f51;
-}
-
-.github-link {
-    max-width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -125,6 +159,16 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 100px;width: 75%;
+    height: 70px;
+    width: 75%;
+}
 
+.footer-year {
+    color: #ffff;
+    font-size: 20px;
+    padding-left: 150px;
+}
+
+.rs-link {
+    padding-right: 150px;
 }
