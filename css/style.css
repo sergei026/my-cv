@@ -16,7 +16,7 @@ a {
     color: inherit;
 }
 
-h1,h2 {
+h1,h2,h3 {
     margin: 0;
     line-height: 40px;
 }
@@ -36,7 +36,7 @@ body {
 
 .container {
     max-width: 1400px;
-    min-width: 765px;
+    min-width: 830px;
     margin: 0 auto;
     padding: 0 15px;
 }
@@ -55,12 +55,11 @@ body {
 
 .header-avatar {
     width: 25%;
-    background-image: url(../assets/img/avatar.jpg);
-    background-size: cover;
 }
 
 .profile-photo {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     object-fit: cover;
 }
 
@@ -99,16 +98,15 @@ body {
     width: 25%;
     background-color: #002f51;
     color: #ffff;
-    padding: 10px 0 0 20px;
+    padding-bottom: 20px;
 }
 
-.contacts-headline,
-.skills-headline {
+.aside-headline {
     display: block;
     margin: 0;
     text-align: center;
     font-size: 30px;
-    padding: 20px 10px 15px 0;
+    padding: 20px 10px 5px 0;
     border-bottom: solid 3px #ff8200;
 }
 
@@ -122,20 +120,81 @@ body {
     width: 75%;
 }
 
-.about-headline,
-.code-headline,
-.projects-headline {
+.section-headline {
     display: block;
+    color: #305ea9;
     font-size: 30px;
-    padding: 30px 10px 15px 0;
-    margin: 0 30px;
+    padding: 20px 10px 5px 0;
     border-bottom: solid 3px #ff8200;
     text-align: end;
+    margin: 0;
+}
+
+.section-content {
+    margin: 0 30px;
 }
 
 .main-text {
-    padding: 15px 0 15px;
-    margin: 0 30px;
+    padding: 10px 0 5px 0;
+    margin: 0;
+}
+
+.lang-item {
+    list-style: inside disclosure-closed;
+    line-height: 25px;
+}
+
+.pre {
+    margin: 10px 0 0 0;
+    height: 100%;
+    width: 100%;
+}
+
+.code {
+    width: 100%;
+}
+
+.projects-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+.project-item {
+    width: 40%;
+    min-height: 80%;
+    background-color: #0092ff;
+    margin: 15px 0 15px 0;
+    border-radius: 10%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.project-title {
+    text-align: center;
+    font-size: 18px;
+    display: block;
+    margin: 10px 0;
+}
+
+.project-info {
+    text-align: center;
+    margin: 5px 0;
+}
+
+.project-img {
+    max-width: 100%;
+}
+
+.soon {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.i-hglt {
+    color: #ffff;
 }
 
 .footer-container {
@@ -153,7 +212,6 @@ body {
     justify-content: center;
     align-items: center;
 }
-
 
 .footer-content {
     display: flex;
