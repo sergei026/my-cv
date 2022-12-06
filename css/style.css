@@ -35,7 +35,7 @@ body {
 }
 
 .container {
-    max-width: 1400px;
+    max-width: 1200px;
     min-width: 830px;
     margin: 0 auto;
     padding: 0 15px;
@@ -44,7 +44,7 @@ body {
 .header {
     color: #ffff;
     font-size: 20px;
-    font-weight: 600;
+    font-weight: 400;
 }
 
 .header-container {
@@ -79,6 +79,13 @@ body {
 
 .nav-link {
     padding-right: 15px;
+    transition: color 0.5s, font-weight 0.5s;
+}
+
+.nav-link:hover {
+    font-weight: 800;
+    color:#305ea9;
+
 }
 
 .header-headline {
@@ -112,8 +119,81 @@ body {
 
 .contacts-item,
 .skills-item {
-    padding: 15px 0 0 10px;
-    align-items: center;    
+    position: relative;
+    margin: 15px 0 0 10px;
+    padding-left: 30px;
+    align-items: center;
+    transition: color 0.5s, font-weight 0.1s;
+}
+
+.contacts-item::before {
+    content: "";
+    position: absolute;
+    height: 24px;
+    width: 24px;
+    left: 0;
+    top: -2px;
+    background-size: contain;
+}
+
+.contacts-item:nth-child(1)::before {
+    background-image: url(../assets/icons/location.png);
+}
+
+.contacts-item:nth-child(2)::before {
+    background-image: url(../assets/icons/email.png);
+}
+
+.contacts-item:nth-child(3)::before {
+    background-image: url(../assets/icons/github.png);
+}
+
+.contacts-item:nth-child(4)::before {
+    background-image: url(../assets/icons/telegram.png);
+}
+
+.contacts-item:nth-child(5)::before {
+    background-image: url(../assets/icons/discord.png);
+}
+
+.skills {
+    line-height: 29px;
+}
+
+.skills-item::before {
+    content: "";
+    position: absolute;
+    height: 27px;
+    width: 27px;
+    left: -2px;
+    top: -1px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.skills-item:nth-child(1)::before {
+    background-image: url(../assets/icons/html.png);
+}
+
+.skills-item:nth-child(2)::before {
+    background-image: url(../assets/icons/css.png);
+}
+
+.skills-item:nth-child(3)::before {
+    background-image: url(../assets/icons/js.png);
+}
+
+.skills-item:nth-child(4)::before {
+    background-image: url(../assets/icons/github-skill.png);
+}
+
+.skills-item:nth-child(5)::before {
+    background-image: url(../assets/icons/figma.png);
+}
+
+.contacts-item:hover {
+    color: #ff8200;
+    font-weight: 600;
 }
 
 .main-content {
@@ -213,12 +293,20 @@ body {
     align-items: center;
 }
 
+.gh-logo {
+    fill: #ff8200;
+}
+
 .footer-content {
     display: flex;
     justify-content: space-between;
     align-items: center;
     height: 70px;
     width: 75%;
+}
+
+.rsschool {
+    fill: #305ea9;
 }
 
 .footer-year {
