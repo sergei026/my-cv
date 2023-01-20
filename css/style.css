@@ -247,7 +247,7 @@ body {
     border-radius: 10%;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
 }
 
 .project-title {
@@ -263,13 +263,20 @@ body {
 }
 
 .project-img {
-    max-width: 100%;
+    width: 100%;
+    height: 100%;
     transition: transform 0.5s;
     background-repeat: no-repeat;
+    border-radius: 10% 10% 0 0;
+    object-fit: cover;
 }
 
 .project-img:hover {
     transform: scale(110%);
+}
+
+.project-link {
+    height: 52%;
 }
 
 .soon {
